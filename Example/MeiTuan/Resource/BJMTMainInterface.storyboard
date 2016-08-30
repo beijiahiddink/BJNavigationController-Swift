@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f37-hl-O6T">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SZn-k7-aP1">
+            <objects>
+                <tabBarController id="f37-hl-O6T" customClass="BJMTTabBarController" customModule="BJNavigationController_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="mEE-hb-ZeM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="H5i-k2-sKd" kind="relationship" relationship="viewControllers" id="rsz-PX-ft7"/>
+                        <segue destination="ehs-9U-V50" kind="relationship" relationship="viewControllers" id="sDf-lJ-XGw"/>
+                        <segue destination="1yF-n8-npC" kind="relationship" relationship="viewControllers" id="vHX-LV-smB"/>
+                        <segue destination="hzp-P4-c5m" kind="relationship" relationship="viewControllers" id="5q1-Zs-Sg8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGi-UC-TmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-552" y="-115"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="JfU-9f-kVJ">
+            <objects>
+                <navigationController id="H5i-k2-sKd" customClass="BJMTNavigationController" customModule="BJNavigationController_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="icon_tabbar_homepage" selectedImage="icon_tabbar_homepage_selected" id="2ES-52-nFk">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1LO-iR-8db">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gsj-9F-UJJ" kind="relationship" relationship="rootViewController" id="NdQ-3T-GUk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UrQ-a2-txW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-1099"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Lb3-8s-PdU">
+            <objects>
+                <viewController id="gsj-9F-UJJ" customClass="BJMTHomeViewController" customModule="BJNavigationController_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J2n-WL-LXs"/>
+                        <viewControllerLayoutGuide type="bottom" id="53Y-OO-w1q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ftg-7U-tW7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k1K-82-SH3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ste-V8-nwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="-1099"/>
+        </scene>
+        <!--附近-->
+        <scene sceneID="91S-44-qE2">
+            <objects>
+                <navigationController id="ehs-9U-V50" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="附近" image="icon_tabbar_nearby_normal" selectedImage="icon_tabbar_nearby_selected" id="Jg8-Ff-pLm">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SGw-nB-FRj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1X-Lx-Iwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-436"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="DoB-Vf-37Z">
+            <objects>
+                <navigationController id="1yF-n8-npC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="icon_tabbar_mine" selectedImage="icon_tabbar_mine_selected" id="BeP-9N-zaf">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dBC-2j-Tux">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfn-RZ-lxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="232"/>
+        </scene>
+        <!--更多-->
+        <scene sceneID="g4d-ng-Qmr">
+            <objects>
+                <navigationController id="hzp-P4-c5m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="更多" image="icon_tabbar_misc" selectedImage="icon_tabbar_misc_selected" id="DBO-SL-He9">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9XM-ci-UP1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oqu-aH-4Gn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="896"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_tabbar_homepage" width="26" height="26"/>
+        <image name="icon_tabbar_homepage_selected" width="26" height="26"/>
+        <image name="icon_tabbar_mine" width="26" height="26"/>
+        <image name="icon_tabbar_mine_selected" width="26" height="26"/>
+        <image name="icon_tabbar_misc" width="26" height="26"/>
+        <image name="icon_tabbar_misc_selected" width="26" height="26"/>
+        <image name="icon_tabbar_nearby_normal" width="26" height="26"/>
+        <image name="icon_tabbar_nearby_selected" width="26" height="26"/>
+    </resources>
+</document>
