@@ -11,9 +11,9 @@
 
 import UIKit
 
-class BJCustomViewController: UIViewController {
+public class BJCustomViewController: UIViewController {
     
-    var headerView: UIView?
+    public var headerView: UIView?
     
     private lazy var _contentView: UIView = {
         let view = UIView()
@@ -22,13 +22,13 @@ class BJCustomViewController: UIViewController {
     }()
     
     //子类添加视图到此View上
-    var contentView: UIView {
+    public var contentView: UIView {
         return _contentView
     }
     
     private var isHeaderViewLoaded = false
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         contentView.frame = view.bounds
@@ -36,7 +36,7 @@ class BJCustomViewController: UIViewController {
         view.addSubview(contentView)
     }
     
-    override func viewWillAppear(animated: Bool) {
+    public override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         if isHeaderViewLoaded == false {
@@ -52,22 +52,22 @@ class BJCustomViewController: UIViewController {
     }
     
     //子类重写需要调用超类
-    override func viewWillLayoutSubviews() {
+    public override func viewWillLayoutSubviews() {
         contentView.frame = view.bounds
         headerView?.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: headerViewHeight)
     }
 }
 
 //MARK: 处理HeaderView的UI和业务逻辑
-extension BJCustomViewController {
+public extension BJCustomViewController {
     
-    final var headerViewHeight: CGFloat {
+    public final var headerViewHeight: CGFloat {
         return (navigationController?.navigationBar.bounds.height ?? 0) + UIApplication.sharedApplication().statusBarFrame.size.height
     }
     
     //加载Header视图，默认第一次加载会自动调用，子类可以重写，但是不要主动调用，
     //想要重新加载调用setNeedsLoadHeaderView
-    func loadHeaderView() {
+    public func loadHeaderView() {
         headerView = {
             let view = BJNavigationBar()
             view.translucent = false
@@ -75,16 +75,16 @@ extension BJCustomViewController {
         }()
     }
     
-    func setNeedsLoadHeaderView() {
+    public func setNeedsLoadHeaderView() {
         isHeaderViewLoaded = false
     }
     
     //刷新NavigationItem从而刷新NavBar上面的视图，默认加载HeaderView时会自动调用，子类可根据需要重写
-    func reloadNavigationItem() {
+    public func reloadNavigationItem() {
         
     }
     
-    func backButtonAction(sender: UIButton) {
+    public func backButtonAction(sender: UIButton) {
         navigationController?.popViewControllerAnimated(true)
     }
 }

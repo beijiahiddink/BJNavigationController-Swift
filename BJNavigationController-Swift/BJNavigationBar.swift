@@ -11,12 +11,12 @@
 
 import UIKit
 
-class BJNavigationBar: UINavigationBar {
+public class BJNavigationBar: UINavigationBar {
     
     private weak var _barBackgroundView: UIView?
     
     //拦截背景视图
-    var barBackgroundView: UIView? {
+    public var barBackgroundView: UIView? {
         if _barBackgroundView == nil {
             for view in subviews {
                 let className = "\(view.classForCoder)"
@@ -32,9 +32,9 @@ class BJNavigationBar: UINavigationBar {
 }
 
 //MARK: 隐藏背景的NavigationBar
-class BJTranslucentNavigationBar: BJNavigationBar {
+public class BJTranslucentNavigationBar: BJNavigationBar {
     
-    override func willMoveToSuperview(newSuperview: UIView?) {
+    public override func willMoveToSuperview(newSuperview: UIView?) {
         if newSuperview != nil {
             //隐藏navigationBar背景视图
             barBackgroundView?.hidden = true
@@ -43,16 +43,16 @@ class BJTranslucentNavigationBar: BJNavigationBar {
 }
 
 //MARK: NavigationBar的背景视图
-class BJCustomHeaderView: UIView {
+public class BJCustomHeaderView: UIView {
     
-    var imageView: UIImageView?
+    public var imageView: UIImageView?
     
-    override internal func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         imageView?.frame = bounds
     }
     
-    override func willMoveToSuperview(newSuperview: UIView?) {
+    public override func willMoveToSuperview(newSuperview: UIView?) {
         if newSuperview == nil {
             imageView?.removeFromSuperview()
             imageView = nil
@@ -60,9 +60,9 @@ class BJCustomHeaderView: UIView {
     }
 }
 
-extension BJCustomHeaderView {
+public extension BJCustomHeaderView {
     
-    func bj_setBackgroundImage(image: UIImage) {
+    public func bj_setBackgroundImage(image: UIImage) {
         defer {
             setNeedsLayout()
         }
@@ -77,7 +77,7 @@ extension BJCustomHeaderView {
         imageView?.image = image
     }
     
-    func bj_setBackgroundColor(color: UIColor) {
+    public func bj_setBackgroundColor(color: UIColor) {
         if imageView != nil {
             imageView?.hidden = true
         }

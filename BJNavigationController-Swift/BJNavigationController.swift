@@ -11,9 +11,9 @@
 
 import UIKit
 
-class BJNavigationController: UINavigationController {
+public class BJNavigationController: UINavigationController {
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         //重新设置透明背景的NavigationBar
@@ -23,7 +23,7 @@ class BJNavigationController: UINavigationController {
         interactivePopGestureRecognizer?.delegate = self
     }
         
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    public override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return visibleViewController?.preferredStatusBarStyle() ?? .Default
     }
 }
