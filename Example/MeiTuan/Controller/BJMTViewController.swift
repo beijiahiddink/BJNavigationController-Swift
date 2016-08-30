@@ -12,7 +12,7 @@
 import UIKit
 
 class BJMTViewController: BJCustomViewController {
-        
+            
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +26,7 @@ class BJMTViewController: BJCustomViewController {
         backgroundView.bounds.size = image!.size
         contentView.addSubview(backgroundView)
     }
-        
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .Default
     }
@@ -35,6 +35,7 @@ class BJMTViewController: BJCustomViewController {
 extension BJMTViewController {
     
     override func reloadNavigationItem() {
+        
         navigationController?.navigationBar.tintColor = MTThemeColor
         
         let spaceButtonItem = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)

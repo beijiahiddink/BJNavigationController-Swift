@@ -67,8 +67,9 @@ class BJMTLocationBarButton: BJMTBarButton {
         }
         
         let imageX = contentRect.width - 14
+        let imageY = contentRect.midY - 2
         
-        return CGRect(x: imageX, y: contentRect.height/2 - 2, width: 9, height: 5)
+        return CGRect(x: imageX, y: imageY, width: 9, height: 5)
     }
     
     override func titleRectForContentRect(contentRect: CGRect) -> CGRect {
@@ -98,18 +99,18 @@ class BJMTSearchBarButton: BJMTBarButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.cornerRadius = bounds.height / 2
+        layer.cornerRadius = bounds.midY
     }
     
     override func imageRectForContentRect(contentRect: CGRect) -> CGRect {
-        return CGRect(x: 8, y: contentRect.height / 2 - 7, width: 14, height: 14)
+        return CGRect(x: 8, y: contentRect.midY - 7, width: 14, height: 14)
     }
     
     override func titleRectForContentRect(contentRect: CGRect) -> CGRect {
         let imageRect = imageRectForContentRect(contentRect)
-        let titleX = imageRect.origin.x + imageRect.width
+        let titleX = imageRect.maxX + 5
         
-        return CGRect(x: titleX + 5, y: 0, width: contentRect.width - titleX - 5, height: contentRect.height)
+        return CGRect(x: titleX, y: 0, width: contentRect.width - titleX, height: contentRect.height)
     }
 }
 
@@ -125,12 +126,12 @@ class BJMTBackBarButton: BJMTBarButton {
     }
     
     override func imageRectForContentRect(contentRect: CGRect) -> CGRect {
-        return CGRect(x: 0, y: contentRect.height / 2 - 10, width: 22, height: 22)
+        return CGRect(x: 0, y: contentRect.midY - 10, width: 22, height: 22)
     }
     
     override func titleRectForContentRect(contentRect: CGRect) -> CGRect {
         let imageRect = imageRectForContentRect(contentRect)
-        let titleX = imageRect.origin.x + imageRect.width - 3
+        let titleX = imageRect.maxX - 3
         
         return CGRect(x: titleX, y: 1, width: contentRect.width - titleX, height: contentRect.height)
     }
