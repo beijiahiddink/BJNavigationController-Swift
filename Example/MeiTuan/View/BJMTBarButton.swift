@@ -17,7 +17,7 @@ class BJMTBarButton: UIButton {
         super.init(frame: frame)
         
         adjustsImageWhenHighlighted = false
-        layout()
+        load()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -27,7 +27,7 @@ class BJMTBarButton: UIButton {
 
 extension BJMTBarButton {
     
-    func layout() {
+    func load() {
         
     }
     
@@ -43,7 +43,7 @@ extension BJMTBarButton {
 
 class BJMTLocationBarButton: BJMTBarButton {
     
-    override func layout() {
+    override func load() {
         tintColor = UIColor.whiteColor()
         titleLabel?.font = barTitleFont
         
@@ -86,7 +86,7 @@ class BJMTLocationBarButton: BJMTBarButton {
 
 class BJMTSearchBarButton: BJMTBarButton {
     
-    override func layout() {
+    override func load() {
         backgroundColor = UIColor.whiteColor()
         let image = UIImage(named: "icon_navigationItem_search")
         
@@ -116,7 +116,7 @@ class BJMTSearchBarButton: BJMTBarButton {
 
 class BJMTBackBarButton: BJMTBarButton {
     
-    override func layout() {
+    override func load() {
         let image = UIImage(named: "icon_navigationItem_back")?.imageWithRenderingMode(.AlwaysTemplate)
         
         setImage(image, forState: .Normal)

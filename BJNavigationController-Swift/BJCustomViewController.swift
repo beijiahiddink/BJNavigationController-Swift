@@ -22,7 +22,7 @@ public class BJCustomViewController: UIViewController {
     }()
     
     //子类添加视图到此View上
-    public var contentView: UIView {
+    public final var contentView: UIView {
         return _contentView
     }
     
@@ -61,7 +61,7 @@ public class BJCustomViewController: UIViewController {
 //MARK: 处理HeaderView的UI和业务逻辑
 public extension BJCustomViewController {
     
-    public final var headerViewHeight: CGFloat {
+    public var headerViewHeight: CGFloat {
         return (navigationController?.navigationBar.bounds.height ?? 0) + UIApplication.sharedApplication().statusBarFrame.size.height
     }
     
