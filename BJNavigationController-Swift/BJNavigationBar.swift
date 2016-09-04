@@ -85,3 +85,17 @@ public extension BJCustomHeaderView {
     }
 }
 
+extension UINavigationBar {
+    func bj_barImageWithColor(color: UIColor) -> UIImage {
+        let rect = CGRect(x: 0, y: 0, width: CGRectGetWidth(bounds), height: CGRectGetHeight(bounds) + CGRectGetHeight(UIApplication.sharedApplication().statusBarFrame))
+        
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
+        color.setFill()
+        UIRectFill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+}
+

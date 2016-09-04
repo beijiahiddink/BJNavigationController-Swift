@@ -8,7 +8,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="SZn-k7-aP1">
             <objects>
-                <tabBarController id="f37-hl-O6T" customClass="BJMTTabBarController" customModule="BJNavigationController_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="f37-hl-O6T" customClass="BJMTTabBarController" customModule="MeiTuan" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="mEE-hb-ZeM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -28,7 +28,7 @@
         <!--首页-->
         <scene sceneID="JfU-9f-kVJ">
             <objects>
-                <navigationController id="H5i-k2-sKd" customClass="BJMTNavigationController" customModule="BJNavigationController_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="H5i-k2-sKd" customClass="BJMTNavigationController" customModule="MeiTuan" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="icon_tabbar_homepage" selectedImage="icon_tabbar_homepage_selected" id="2ES-52-nFk">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
                     </tabBarItem>
@@ -47,7 +47,7 @@
         <!--Home View Controller-->
         <scene sceneID="Lb3-8s-PdU">
             <objects>
-                <viewController id="gsj-9F-UJJ" customClass="BJMTHomeViewController" customModule="BJNavigationController_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gsj-9F-UJJ" customClass="BJMTHomeViewController" customModule="MeiTuan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J2n-WL-LXs"/>
                         <viewControllerLayoutGuide type="bottom" id="53Y-OO-w1q"/>

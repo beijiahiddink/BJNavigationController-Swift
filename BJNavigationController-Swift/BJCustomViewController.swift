@@ -54,7 +54,18 @@ public class BJCustomViewController: UIViewController {
     //子类重写需要调用超类
     public override func viewWillLayoutSubviews() {
         contentView.frame = view.bounds
-        headerView?.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: headerViewHeight)
+        
+        guard let headerView = headerView else { return }
+        
+        if headerView.isKindOfClass(UINavigationBar.classForCoder()) {
+            headerView.frame = CGRect(
+                x: 0,
+                y: UIApplication.sharedApplication().statusBarFrame.size.height,
+                width: view.bounds.width,
+                height: navigationController?.navigationBar.bounds.height ?? 0)
+        } else {
+            headerView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: headerViewHeight)
+        }
     }
 }
 
@@ -69,7 +80,7 @@ public extension BJCustomViewController {
     //想要重新加载调用setNeedsLoadHeaderView
     public func loadHeaderView() {
         headerView = {
-            let view = BJNavigationBar()
+            let view = UINavigationBar()
             view.translucent = false
             return view
         }()
@@ -85,7 +96,8 @@ public extension BJCustomViewController {
     }
     
     public func backButtonAction(sender: UIButton) {
-        navigationController?.popViewControllerAnimated(true)
+        navigationController?.popViewControllerAnimated(true
+        )
     }
 }
 

@@ -4,15 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BJNavigationController-Swift.xcscheme</key>
+		<key>Main.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>MeiTuan.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2B6585F51D743E8200C745E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2B6A75671D785F7300CEB34D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

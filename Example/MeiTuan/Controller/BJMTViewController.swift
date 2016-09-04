@@ -35,7 +35,7 @@ class BJMTViewController: BJCustomViewController {
 extension BJMTViewController {
     
     override func reloadNavigationItem() {
-        
+                
         navigationController?.navigationBar.tintColor = MTThemeColor
         
         let spaceButtonItem = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)

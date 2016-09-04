@@ -43,7 +43,7 @@ class BJMTBarButtonItem: UIBarButtonItem {
             
         case .search:
             let button = BJMTSearchBarButton()
-            button.bounds.size = CGSize(width: screenW, height: 26)
+            button.bounds.size = CGSize(width: 195, height: 26)
             customView = button
             
         case .scan:

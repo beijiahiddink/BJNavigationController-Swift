@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B6289A81D74A90000A6F946 /* BJLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6289A61D74A90000A6F946 /* BJLaunchScreen.storyboard */; };
 		2B6586151D743F1900C745E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65860D1D743F1900C745E7 /* AppDelegate.swift */; };
-		2B6586161D743F1900C745E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B65860E1D743F1900C745E7 /* Assets.xcassets */; };
-		2B6586191D743F1900C745E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B6586131D743F1900C745E7 /* Info.plist */; };
 		2B65861C1D743F8B00C745E7 /* BJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65861B1D743F8B00C745E7 /* BJNavigationController.swift */; };
 		2B65861E1D743FB500C745E7 /* BJCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65861D1D743FB500C745E7 /* BJCustomViewController.swift */; };
 		2B6586201D743FE900C745E7 /* BJNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65861F1D743FE900C745E7 /* BJNavigationBar.swift */; };
@@ -23,14 +20,23 @@
 		2B6586481D7465DB00C745E7 /* BJMTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6586421D7465DB00C745E7 /* BJMTViewController.swift */; };
 		2B65864C1D74660300C745E7 /* BJMTBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65864A1D74660300C745E7 /* BJMTBarButton.swift */; };
 		2B65864D1D74660300C745E7 /* BJMTBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65864B1D74660300C745E7 /* BJMTBarButtonItem.swift */; };
+		2B6A75591D78563B00CEB34D /* Info-MeiTuan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A75581D78563B00CEB34D /* Info-MeiTuan.plist */; };
+		2B6A755D1D7858CC00CEB34D /* BJConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A755C1D7858CC00CEB34D /* BJConfig.m */; };
+		2BCE01EB1D7862AA0013F4C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65860D1D743F1900C745E7 /* AppDelegate.swift */; };
+		2BCE01ED1D7863370013F4C3 /* BJCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65861D1D743FB500C745E7 /* BJCustomViewController.swift */; };
+		2BCE01EE1D7863370013F4C3 /* BJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65861B1D743F8B00C745E7 /* BJNavigationController.swift */; };
+		2BCE01EF1D7863370013F4C3 /* BJNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65861F1D743FE900C745E7 /* BJNavigationBar.swift */; };
+		2BCE01F01D78634E0013F4C3 /* BJConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A755C1D7858CC00CEB34D /* BJConfig.m */; };
+		2BCE01F91D7864090013F4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE01F31D7864090013F4C3 /* Assets.xcassets */; };
+		2BCE01FA1D7864090013F4C3 /* BJLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE01F41D7864090013F4C3 /* BJLaunchScreen.storyboard */; };
+		2BCE01FB1D7864090013F4C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE01F61D7864090013F4C3 /* Main.storyboard */; };
+		2BCE01FC1D7864090013F4C3 /* Info-Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE01F81D7864090013F4C3 /* Info-Main.plist */; };
+		2BCE01FD1D7864310013F4C3 /* BJLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE01F41D7864090013F4C3 /* BJLaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B6289A71D74A90000A6F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BJLaunchScreen.storyboard; sourceTree = "<group>"; };
-		2B6585F61D743E8200C745E7 /* BJNavigationController-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BJNavigationController-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6585F61D743E8200C745E7 /* MeiTuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B65860D1D743F1900C745E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B65860E1D743F1900C745E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2B6586131D743F1900C745E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B65861B1D743F8B00C745E7 /* BJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJNavigationController.swift; sourceTree = "<group>"; };
 		2B65861D1D743FB500C745E7 /* BJCustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJCustomViewController.swift; sourceTree = "<group>"; };
 		2B65861F1D743FE900C745E7 /* BJNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJNavigationBar.swift; sourceTree = "<group>"; };
@@ -43,10 +49,26 @@
 		2B6586421D7465DB00C745E7 /* BJMTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJMTViewController.swift; sourceTree = "<group>"; };
 		2B65864A1D74660300C745E7 /* BJMTBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJMTBarButton.swift; sourceTree = "<group>"; };
 		2B65864B1D74660300C745E7 /* BJMTBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJMTBarButtonItem.swift; sourceTree = "<group>"; };
+		2B6A75581D78563B00CEB34D /* Info-MeiTuan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-MeiTuan.plist"; sourceTree = "<group>"; };
+		2B6A755A1D7858CB00CEB34D /* BJNavigationController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BJNavigationController-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B6A755B1D7858CC00CEB34D /* BJConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJConfig.h; sourceTree = "<group>"; };
+		2B6A755C1D7858CC00CEB34D /* BJConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJConfig.m; sourceTree = "<group>"; };
+		2B6A75681D785F7300CEB34D /* Main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Main.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCE01F31D7864090013F4C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BCE01F51D7864090013F4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BJLaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BCE01F71D7864090013F4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BCE01F81D7864090013F4C3 /* Info-Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Main.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2B6585F31D743E8200C745E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B6A75651D785F7300CEB34D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,7 +90,8 @@
 		2B6585F71D743E8200C745E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B6585F61D743E8200C745E7 /* BJNavigationController-Swift.app */,
+				2B6585F61D743E8200C745E7 /* MeiTuan.app */,
+				2B6A75681D785F7300CEB34D /* Main.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,10 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				2B65860D1D743F1900C745E7 /* AppDelegate.swift */,
+				2B6A755A1D7858CB00CEB34D /* BJNavigationController-Bridging-Header.h */,
+				2B6A755B1D7858CC00CEB34D /* BJConfig.h */,
+				2B6A755C1D7858CC00CEB34D /* BJConfig.m */,
+				2BCE01F11D7864090013F4C3 /* Main */,
 				2B6586231D74416900C745E7 /* MeiTuan */,
-				2B65860E1D743F1900C745E7 /* Assets.xcassets */,
-				2B6289A61D74A90000A6F946 /* BJLaunchScreen.storyboard */,
-				2B6586131D743F1900C745E7 /* Info.plist */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -111,6 +135,7 @@
 			children = (
 				2B6586331D744A9800C745E7 /* BJMTMainInterface.storyboard */,
 				2B6586341D744A9800C745E7 /* MTAssets.xcassets */,
+				2B6A75581D78563B00CEB34D /* Info-MeiTuan.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -135,12 +160,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2BCE01F11D7864090013F4C3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2BCE01F21D7864090013F4C3 /* Resource */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2BCE01F21D7864090013F4C3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2BCE01F41D7864090013F4C3 /* BJLaunchScreen.storyboard */,
+				2BCE01F61D7864090013F4C3 /* Main.storyboard */,
+				2BCE01F31D7864090013F4C3 /* Assets.xcassets */,
+				2BCE01F81D7864090013F4C3 /* Info-Main.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B6585F51D743E8200C745E7 /* BJNavigationController-Swift */ = {
+		2B6585F51D743E8200C745E7 /* MeiTuan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B6586081D743E8200C745E7 /* Build configuration list for PBXNativeTarget "BJNavigationController-Swift" */;
+			buildConfigurationList = 2B6586081D743E8200C745E7 /* Build configuration list for PBXNativeTarget "MeiTuan" */;
 			buildPhases = (
 				2B6585F21D743E8200C745E7 /* Sources */,
 				2B6585F31D743E8200C745E7 /* Frameworks */,
@@ -150,9 +194,26 @@
 			);
 			dependencies = (
 			);
-			name = "BJNavigationController-Swift";
+			name = MeiTuan;
 			productName = "BJNavigationController-Swift";
-			productReference = 2B6585F61D743E8200C745E7 /* BJNavigationController-Swift.app */;
+			productReference = 2B6585F61D743E8200C745E7 /* MeiTuan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B6A75671D785F7300CEB34D /* Main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B6A75771D785F7300CEB34D /* Build configuration list for PBXNativeTarget "Main" */;
+			buildPhases = (
+				2B6A75641D785F7300CEB34D /* Sources */,
+				2B6A75651D785F7300CEB34D /* Frameworks */,
+				2B6A75661D785F7300CEB34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Main;
+			productName = Main;
+			productReference = 2B6A75681D785F7300CEB34D /* Main.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,6 +227,9 @@
 				ORGANIZATIONNAME = beijiahiddink;
 				TargetAttributes = {
 					2B6585F51D743E8200C745E7 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					2B6A75671D785F7300CEB34D = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -183,7 +247,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B6585F51D743E8200C745E7 /* BJNavigationController-Swift */,
+				2B6A75671D785F7300CEB34D /* Main */,
+				2B6585F51D743E8200C745E7 /* MeiTuan */,
 			);
 		};
 /* End PBXProject section */
@@ -195,9 +260,19 @@
 			files = (
 				2B6586351D744A9800C745E7 /* BJMTMainInterface.storyboard in Resources */,
 				2B6586361D744A9800C745E7 /* MTAssets.xcassets in Resources */,
-				2B6586191D743F1900C745E7 /* Info.plist in Resources */,
-				2B6586161D743F1900C745E7 /* Assets.xcassets in Resources */,
-				2B6289A81D74A90000A6F946 /* BJLaunchScreen.storyboard in Resources */,
+				2B6A75591D78563B00CEB34D /* Info-MeiTuan.plist in Resources */,
+				2BCE01FD1D7864310013F4C3 /* BJLaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B6A75661D785F7300CEB34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCE01FC1D7864090013F4C3 /* Info-Main.plist in Resources */,
+				2BCE01FB1D7864090013F4C3 /* Main.storyboard in Resources */,
+				2BCE01F91D7864090013F4C3 /* Assets.xcassets in Resources */,
+				2BCE01FA1D7864090013F4C3 /* BJLaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +289,7 @@
 				2B6586201D743FE900C745E7 /* BJNavigationBar.swift in Sources */,
 				2B6586481D7465DB00C745E7 /* BJMTViewController.swift in Sources */,
 				2B65864C1D74660300C745E7 /* BJMTBarButton.swift in Sources */,
+				2B6A755D1D7858CC00CEB34D /* BJConfig.m in Sources */,
 				2B6586451D7465DB00C745E7 /* BJMTHomeViewController.swift in Sources */,
 				2B65861E1D743FB500C745E7 /* BJCustomViewController.swift in Sources */,
 				2B65861C1D743F8B00C745E7 /* BJNavigationController.swift in Sources */,
@@ -222,15 +298,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B6A75641D785F7300CEB34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCE01F01D78634E0013F4C3 /* BJConfig.m in Sources */,
+				2BCE01ED1D7863370013F4C3 /* BJCustomViewController.swift in Sources */,
+				2BCE01EE1D7863370013F4C3 /* BJNavigationController.swift in Sources */,
+				2BCE01EF1D7863370013F4C3 /* BJNavigationBar.swift in Sources */,
+				2BCE01EB1D7862AA0013F4C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2B6289A61D74A90000A6F946 /* BJLaunchScreen.storyboard */ = {
+		2BCE01F41D7864090013F4C3 /* BJLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2B6289A71D74A90000A6F946 /* Base */,
+				2BCE01F51D7864090013F4C3 /* Base */,
 			);
 			name = BJLaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2BCE01F61D7864090013F4C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BCE01F71D7864090013F4C3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -322,24 +418,65 @@
 		2B6586091D743E8200C745E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MeiTuan,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Example/MeiTuan/Resource/Info-MeiTuan.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beijiahiddink.BJNavigationController-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/BJNavigationController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2B65860A1D743E8200C745E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				GCC_PREPROCESSOR_DEFINITIONS = MeiTuan;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/MeiTuan/Resource/Info-MeiTuan.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beijiahiddink.BJNavigationController-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/BJNavigationController-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		2B6A75781D785F7300CEB34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					Main,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Main/Resource/Info-Main.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beijiahiddink.Main;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/BJNavigationController-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		2B6A75791D785F7300CEB34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = Main;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Main/Resource/Info-Main.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beijiahiddink.Main;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/BJNavigationController-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -355,11 +492,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B6586081D743E8200C745E7 /* Build configuration list for PBXNativeTarget "BJNavigationController-Swift" */ = {
+		2B6586081D743E8200C745E7 /* Build configuration list for PBXNativeTarget "MeiTuan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B6586091D743E8200C745E7 /* Debug */,
 				2B65860A1D743E8200C745E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B6A75771D785F7300CEB34D /* Build configuration list for PBXNativeTarget "Main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6A75781D785F7300CEB34D /* Debug */,
+				2B6A75791D785F7300CEB34D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

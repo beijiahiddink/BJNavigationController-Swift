@@ -16,17 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         NSThread.sleepForTimeInterval(1.0)
         
-        let rootViewController = UIStoryboard(name: "BJMTMainInterface", bundle: nil)
-            .instantiateInitialViewController()
+        let config = BJConfig()
+        let rootViewController = config.rootViewController()
         
         window = {
             let window = UIWindow()
             window.backgroundColor = UIColor.whiteColor()
-            window.rootViewController = rootViewController
+            window.makeKeyAndVisible()
             return window
         }()
         
-        window?.makeKeyAndVisible()
+        window?.rootViewController = rootViewController
+        
         
         return true
     }
