@@ -28,6 +28,7 @@ public class BJCustomViewController: UIViewController {
     
     private var isHeaderViewLoaded = false
     
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,18 +55,7 @@ public class BJCustomViewController: UIViewController {
     //子类重写需要调用超类
     public override func viewWillLayoutSubviews() {
         contentView.frame = view.bounds
-        
-        guard let headerView = headerView else { return }
-        
-        if headerView.isKindOfClass(UINavigationBar.classForCoder()) {
-            headerView.frame = CGRect(
-                x: 0,
-                y: UIApplication.sharedApplication().statusBarFrame.size.height,
-                width: view.bounds.width,
-                height: navigationController?.navigationBar.bounds.height ?? 0)
-        } else {
-            headerView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: headerViewHeight)
-        }
+        setHeaderViewFrame()
     }
 }
 
@@ -73,7 +63,21 @@ public class BJCustomViewController: UIViewController {
 public extension BJCustomViewController {
     
     public var headerViewHeight: CGFloat {
-        return (navigationController?.navigationBar.bounds.height ?? 0) + UIApplication.sharedApplication().statusBarFrame.size.height
+        return (navigationController?.navigationBar.bounds.height ?? 44) + UIApplication.sharedApplication().statusBarFrame.size.height
+    }
+    
+    private func setHeaderViewFrame() {
+        guard let headerView = headerView else { return }
+        
+        if headerView.isKindOfClass(UINavigationBar.classForCoder()) {
+            headerView.frame = CGRect(
+                x: 0,
+                y: UIApplication.sharedApplication().statusBarFrame.size.height,
+                width: view.bounds.width,
+                height: navigationController?.navigationBar.bounds.height ?? 44)
+        } else {
+            headerView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: headerViewHeight)
+        }
     }
     
     //加载Header视图，默认第一次加载会自动调用，子类可以重写，但是不要主动调用，

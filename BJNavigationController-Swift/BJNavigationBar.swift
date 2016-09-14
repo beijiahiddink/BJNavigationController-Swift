@@ -20,7 +20,7 @@ public class BJNavigationBar: UINavigationBar {
         if _barBackgroundView == nil {
             for view in subviews {
                 let className = "\(view.classForCoder)"
-                if className == "_UINavigationBarBackground" {
+                if className == "_UINavigationBarBackground" || className == "_UIBarBackground"  {
                     _barBackgroundView = view
                     break
                 }
@@ -46,6 +46,7 @@ public class BJTranslucentNavigationBar: BJNavigationBar {
 public class BJCustomHeaderView: UIView {
     
     public var imageView: UIImageView?
+    
     
     public override func layoutSubviews() {
         super.layoutSubviews()
@@ -86,6 +87,7 @@ public extension BJCustomHeaderView {
 }
 
 extension UINavigationBar {
+    
     func bj_barImageWithColor(color: UIColor) -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: CGRectGetWidth(bounds), height: CGRectGetHeight(bounds) + CGRectGetHeight(UIApplication.sharedApplication().statusBarFrame))
         
@@ -95,7 +97,7 @@ extension UINavigationBar {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return image
+        return image!
     }
 }
 

@@ -41,7 +41,7 @@ extension BJMTViewController {
         let spaceButtonItem = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)
         spaceButtonItem.width = -8
         
-        let backButtonItem = BJMTBarButtonItem(bj_style: .back, target: self, action: Selector("backButtonAction:"))
+        let backButtonItem = BJMTBarButtonItem(bj_style: .back, target: self, action: #selector(BJCustomViewController.backButtonAction(_:)))
         
         navigationItem.leftBarButtonItems = [spaceButtonItem, backButtonItem]
     }

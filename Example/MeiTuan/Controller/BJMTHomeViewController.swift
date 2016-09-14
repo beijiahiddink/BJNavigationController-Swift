@@ -51,7 +51,7 @@ extension BJMTHomeViewController {
         if navigationItem.leftBarButtonItems == nil {
             spaceButtonItem = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)
             spaceButtonItem?.width = -8
-            let locationButtonItem = BJMTBarButtonItem(bj_style: .location, target: self, action: Selector("itemAction:"))
+            let locationButtonItem = BJMTBarButtonItem(bj_style: .location, target: self, action: #selector(BJMTHomeViewController.itemAction(_:)))
             navigationItem.leftBarButtonItems = [spaceButtonItem!, locationButtonItem]
         }
         
@@ -64,15 +64,15 @@ extension BJMTHomeViewController {
         //<---- titleView ---->
         
         if navigationItem.titleView == nil {
-            let searchButtonItem = BJMTBarButtonItem(bj_style: .search, target: self, action: Selector("itemAction:"))
+            let searchButtonItem = BJMTBarButtonItem(bj_style: .search, target: self, action: #selector(BJMTHomeViewController.itemAction(_:)))
             navigationItem.titleView = searchButtonItem.customView
         }
         
         //<---- rightBarButtonItems ---->
         
         if navigationItem.rightBarButtonItems == nil {
-            let messageButtonItem = BJMTBarButtonItem(bj_style: .message, target: self, action: Selector("itemAction:"))
-            let scanButtonItem = BJMTBarButtonItem(bj_style: .scan, target: self, action: Selector("itemAction:"))
+            let messageButtonItem = BJMTBarButtonItem(bj_style: .message, target: self, action: #selector(BJMTHomeViewController.itemAction(_:)))
+            let scanButtonItem = BJMTBarButtonItem(bj_style: .scan, target: self, action: #selector(BJMTHomeViewController.itemAction(_:)))
             
             navigationItem.rightBarButtonItems = [spaceButtonItem!, messageButtonItem, scanButtonItem]
         }
